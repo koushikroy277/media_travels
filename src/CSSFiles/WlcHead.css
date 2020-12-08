@@ -1,0 +1,110 @@
+.welcome{
+    height: 100vh;
+}
+
+.video{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px;
+}
+
+.welcome .video video{
+    width: 550px;
+    height: 400px;
+}
+
+.welcome .video .video-des{
+    margin-left: 50px;
+}
+
+.welcome .video .video-des p{
+    font-size: 20px;
+    opacity: .7;
+}
+
+.welcome .welcome-head{
+    margin-top: 650px;
+    text-align: center;
+}
+
+.welcome .welcome-head h1{
+    font-size: 3rem;
+    font-weight: 700;
+    opacity: .6;
+}
+
+.welcome .welcome-head h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--theme-color);
+    opacity: .8;
+}
+
+.welcome .welcome-head h3{
+    font-size: 30px;
+    font-weight: 600;
+    opacity: .5;
+    margin-top: 100px;
+}
+
+.facilities{
+    background-color:#1455B3;
+    margin-top: 300px;
+}
+
+.facilities .com-head{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.facilities .com-head h1{
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+
+.facilities .competency{
+    margin: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px 0;
+}
+
+.facilities .competency .com-card{
+    margin: 0 20px 50px 20px;
+    background-color: rgba(135, 207, 235, 0.2);
+    border-radius: 10px;
+    position: relative;
+    padding: 50px;
+}
+
+.facilities .competency .com-card h1{
+    font-size: 30px;
+    color:  #fff;
+}
+
+.facilities .competency .com-card i{
+    font-size: 40px;
+    color: rgb(2, 51, 66);
+    background-color: #88BDBC;
+    border-radius: 50%;
+    padding: 8px 18px;
+    position: absolute;
+    top: -30px;
+    left: -20px;
+
+}
+
+.facilities .competency .com-card i::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    display: block;
+    background-color: #fff;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 105px;
+    left: 7px;
+}

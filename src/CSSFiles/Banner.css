@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    background-image: url("../assets/airplane-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-container .banner .banner-sect{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.banner-container .banner .banner-sect h1{
+    font-size: 6rem;
+    font-weight: 700;   
+}
+
+.banner-container .banner .banner-sect p{
+    font-size: 30px;
+    font-weight: 600;
+}
+
