@@ -6,6 +6,8 @@ import WlcHead from './WlcHead';
 import Package from './Package';
 import Services from './Services';
 import Feedback from './Feedback';
+import Contact from './Contact';
+import Footer from './Footer';
 
 export default function Home() {
     return (
@@ -27,6 +29,12 @@ export default function Home() {
         </section>
         <section className="mainFeedback">
             <Feedback />
+        </section>
+        <section className="mainContact">
+            <Contact />
+        </section>
+        <section className="mainFooter">
+            <Footer />
         </section>
         </>
     )

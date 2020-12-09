@@ -34,7 +34,6 @@
     transform: scale(1.2, 1.1);
 }
 
-
 .package .package-card h1{
     font-size: 30px;
     display: inline;
@@ -49,7 +48,7 @@
 }
 
 .package .package-card h1, p,button{
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .package .package-card img{
@@ -62,12 +61,12 @@
 }
 
 .package .package-card button{
-    padding: 15px;
+    padding: 13px;
     outline: none;
     border: none;
     background-color: #1455B3;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 8px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -76,12 +75,17 @@
 
 .package .package-card button i{
     margin-left: 3px;
-    display: none;
-    transition: display .3s ease-in-out;
 }
 
-.package .package-card button:hover i{
-    display: inline;
+.package .package-card button:hover{
+    color: var(--theme-color);
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 500px){
+    .package{
+        margin: 50px;
+    }
 }
 
 

@@ -10,6 +10,9 @@ export default function Banner() {
                 <div className="banner-sect">
                     <h1>Media Travels</h1>
                     <p>Feel Free to travel with us</p>
+                    <button className="banner-btn">
+                        Begin your journey here
+                    </button>
                 </div>
             </div>
         </div>

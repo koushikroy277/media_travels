@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 :root{
     --theme-color: #1455B3;
     --font-color: #3a7fff;

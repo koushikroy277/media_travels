@@ -13,12 +13,12 @@ export default function WlcHead() {
                     <h2>Media Travels</h2>
                 </div>
                 <div className="video">
-                    <video src={Roam} controls autoPlay/>
+                    <video src={Roam} width="100%" controls autoPlay/>
                     <div className="video-des">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem maiores atque et cum. Nemo hic cum minus possimus necessitatibus eum? Fugiat minima odio fuga repudiandae natus enim, nostrum dolore veritatis.
                         Nulla iusto accusamus, molestias ipsum nemo quo ad dolores culpa repudiandae voluptate harum facilis laudantium necessitatibus nostrum temporibus corporis asperiores iste reiciendis atque officiis sed dignissimos blanditiis enim doloremque. Blanditiis?
                         Alias natus dolorem commodi? Ullam, ea! Libero quibusdam rerum esse hic laborum non ipsa adipisci dignissimos ullam consequatur error modi dolores nesciunt consequuntur perferendis, autem veniam, nobis placeat quia quos.
-                        Sunt tempore facilis voluptatum minima atque necessitatibus iure enim officia quis veniam laboriosam asperiores sapiente ipsum dolores magni ex at, quasi officiis natus fugiat commodi voluptatem error! Adipisci, quisquam dolorem.
+                        
                         
                         </p>
                     </div>

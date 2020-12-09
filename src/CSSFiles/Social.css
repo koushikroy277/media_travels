@@ -1,0 +1,15 @@
+.social ul{
+    display: flex;
+}
+
+.social ul li{
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+.social ul li:hover{
+    color: var(--theme-color);
+    border-bottom: 1px solid  var(--theme-color);
+}

@@ -5,16 +5,12 @@
 .video{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
     margin: 50px;
 }
 
 .welcome .video video{
-    width: 550px;
-    height: 400px;
-}
-
-.welcome .video .video-des{
-    margin-left: 50px;
+    border-radius: 10px;
 }
 
 .welcome .video .video-des p{
@@ -107,4 +103,55 @@
     position: absolute;
     top: 105px;
     left: 7px;
+    transition: all .2s ease;
 }
+
+
+.facilities .competency .com-card:hover i::after{
+    transform: rotate(0deg);
+    top: 40px;
+    left: 75px;
+}
+
+@media only screen and (max-width: 1060px){
+    .video{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .video .video-des{
+        margin: 50px 0;
+    }
+
+    .facilities{
+        margin-top: 500px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .facilities{
+        margin-top: 600px;
+    }
+
+    .welcome .video .video-des{
+        margin: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .facilities{
+        margin-top: 800px;
+    }
+
+    .welcome .welcome-head{
+        margin-top: 750px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .facilities{
+        margin-top: 1000px;
+    }
+}
+
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSSFiles/Package.css';
-import { FaMoneyBill, FaShoppingCart } from 'react-icons/fa'
+import { FaShoppingCart, FaDollarSign } from 'react-icons/fa'
 import Pkg from '../assets/pkg.jpg';
 import Pkg2 from '../assets/pkg2.jpg';
 import Pkg3 from '../assets/pkg3.jpg';
@@ -20,7 +20,7 @@ export default function Package() {
                     <h1>Belgium</h1><h1>350$</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos modi rerum, quod aperiam molestiae deleniti sapiente unde nihil.
                     </p>
-                    <button>Buy Now <i><FaMoneyBill/></i></button>
+                    <button>Buy Now <i><FaDollarSign/></i></button>
                     <button>Add to Cart <i><FaShoppingCart/></i></button>
                 </div>
                 <div className="package-card">
@@ -28,7 +28,7 @@ export default function Package() {
                     <h1>Rome</h1><h1>350$</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos modi rerum, quod aperiam molestiae deleniti sapiente unde nihil.
                     </p>
-                    <button>Buy Now <i><FaMoneyBill/></i></button>
+                    <button>Buy Now <i><FaDollarSign/></i></button>
                     <button>Add to Cart <i><FaShoppingCart/></i></button>
                 </div>
                 <div className="package-card">
@@ -36,7 +36,7 @@ export default function Package() {
                     <h1>venice</h1><h1>350$</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos modi rerum, quod aperiam molestiae deleniti sapiente unde nihil.
                     </p>
-                    <button>Buy Now <i><FaMoneyBill/></i></button>
+                    <button>Buy Now <i><FaDollarSign/></i></button>
                     <button>Add to Cart <i><FaShoppingCart/></i></button>
                 </div>
                 <div className="package-card">
@@ -44,7 +44,7 @@ export default function Package() {
                     <h1>Grenada</h1><h1>350$</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos modi rerum, quod aperiam molestiae deleniti sapiente unde nihil.
                     </p>
-                    <button>Buy Now <i><FaMoneyBill/></i></button>
+                    <button>Buy Now <i><FaDollarSign/></i></button>
                     <button>Add to Cart <i><FaShoppingCart/></i></button>
                 </div>
                 <div className="package-card">
@@ -52,7 +52,7 @@ export default function Package() {
                     <h1>Maldives</h1><h1>350$</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos modi rerum, quod aperiam molestiae deleniti sapiente unde nihil.
                     </p>
-                    <button>Buy Now <i><FaMoneyBill/></i></button>
+                    <button>Buy Now <i><FaDollarSign/></i></button>
                     <button>Add to Cart <i><FaShoppingCart/></i></button>
                 </div>
                 <div className="package-card">
@@ -60,7 +60,7 @@ export default function Package() {
                     <h1>Croatia</h1><h1>350$</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos modi rerum, quod aperiam molestiae deleniti sapiente unde nihil.
                     </p>
-                    <button>Buy Now <i><FaMoneyBill/></i></button>
+                    <button>Buy Now <i><FaDollarSign/></i></button>
                     <button>Add to Cart <i><FaShoppingCart/></i></button>
                 </div>
             </section>

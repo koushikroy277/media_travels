@@ -10,6 +10,7 @@ export default class Nav extends Component {
         const elems = document.querySelectorAll('.sidenav');
         const instances = M.Sidenav.init(elems, {});
         });
+        window.addEventListener("scroll", this.chngBg)
     }
 
     constructor(props){
@@ -27,9 +28,6 @@ export default class Nav extends Component {
         }
     }
 
-    componentDidMount(){
-        window.addEventListener("scroll", this.chngBg)
-    }
 
     render(){
     return (
@@ -38,7 +36,7 @@ export default class Nav extends Component {
         <nav className={this.state.navbar ? "nav" : "nav-trans"}>
             <div className={this.state.navbar ? "no-wrapper" : "nav-wrapper"}>
             <Link to="#!" className="brand-logo link">
-                <i><FaArtstation /></i> Media Travels
+                <i><FaArtstation /></i> <strong>Media Travels</strong> 
             </Link>
             <Link to="#" data-target="mobile-demo" className="sidenav-trigger link">
                 <i className="material-icons">menu</i>
@@ -60,24 +58,31 @@ export default class Nav extends Component {
                 <Link className="link" activeClassName="activeLink" smooth to="#services">Services</Link>
                 </li>
                 <li>
-                <Link className="link" activeClassName="activeLink" smooth to="#mobile.html">Contact</Link>
+                <Link className="link" activeClassName="activeLink" smooth to="#contact">Contact</Link>
                 </li>
             </ul>
             </div>
         </nav>
         </div>
         <ul className="sidenav" id="mobile-demo">
+            <li className="side-brand"><i><FaArtstation /></i> <strong>Media Travels</strong></li>
             <li>
-            <Link className="link" smooth to="#sass.html">Sass</Link>
+            <Link className="link" activeClassName="activeLink" smooth to="#banner">Home</Link>
             </li>
             <li>
-            <Link className="link" smooth to="#badges.html">Components</Link>
+            <Link className="link"activeClassName="activeLink" smooth to="#about">About</Link>
             </li>
             <li>
-            <Link className="link" smooth to="#collapsible.html">Javascript</Link>
+            <Link className="link"activeClassName="activeLink" smooth to="#facilities">Facilties</Link>
             </li>
             <li>
-            <Link className="link" smooth to="#mobile.html">Mobile</Link>
+            <Link className="link"activeClassName="activeLink" smooth to="#tour">Tour</Link>
+            </li>
+            <li>
+            <Link className="link"activeClassName="activeLink" smooth to="#services">Services</Link>
+            </li>
+            <li>
+            <Link className="link"activeClassName="activeLink" smooth to="#contact">Contact</Link>
             </li>
         </ul>
 

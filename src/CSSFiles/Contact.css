@@ -1,0 +1,78 @@
+.contact-sect{
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
+}
+
+.contact-sect .address-info .address{
+    margin-top: 20px;
+}
+
+.contact-sect .address-info .address {
+    display: flex;
+    position: relative;
+}
+
+.contact-sect .address-info .address h1{
+    font-size: 20px;
+    margin-left: 30px;
+    opacity: .5;
+}
+
+.contact-sect .address-info .address h2{
+    font-size: 25px;
+    color: var(--theme-color);
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.contact-sect .address-info .address i{
+    font-size: 30px;
+    margin-left: 30px;
+    color: #fff;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    padding: 10px 15px;
+    height: 100%;
+}
+
+.contact-sect .address-info .address i::before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: var(--theme-color);
+    position: absolute;
+    left: 30px;
+    top: 80px;
+    transform: rotate(90deg);
+}
+
+.contact-sect .contact-info input{
+    border: none;
+    outline: none;
+    background-color: rgb(234, 231, 231);
+    margin-bottom: 20px;
+
+}
+
+.contact-sect .contact-info label{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-sect .contact-info form #message{
+    margin-top: 30px;
+    padding: 100px;
+    border-radius: 15px;
+    font-size: 25px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 500px){
+    .contact-sect{
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,30 @@
+.primary-footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 100px;
+    padding: 70px 100px;
+}
+
+.footer .footer-part:last-child{
+    margin-left: 60px;
+}
+
+.footer .footer-part h1{
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--theme-color);
+    width: 60%;
+    text-align: center;
+}
+
+.footer .footer-part p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
