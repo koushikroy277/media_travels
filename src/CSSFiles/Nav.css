@@ -54,7 +54,8 @@
 }
 
 .nav .no-wrapper ul li .activeLink{
-    border-bottom: 2px solid var(--theme-color);
+    background-color: var(--theme-color);
+
 }
 
 .nav .no-wrapper .link{
@@ -63,6 +64,15 @@
 
 .sidenav li .link{
     transition: all .3s ease;
+}
+
+.sidenav li .link i{
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+.sidenav li .link:hover i{
+    color: #fff;
 }
 
 .sidenav li .link:hover{
@@ -74,30 +84,38 @@
     display: none;
 }
 
-@media only screen and (max-width: 500px){
-    .nav-trans .nav-wrapper .brand-logo strong{
-        opacity: 0;
-    }
-
-    .nav-trans .nav-wrapper .brand-logo i{
-        margin-left: 100px;
-        font-size: 40px;
-    }
-
-    .nav .no-wrapper .brand-logo strong{
-        opacity: 0;
-    }
-
-    .nav .no-wrapper .brand-logo i{
-        margin-left: 100px;
-        font-size: 40px;
-    }
-
+@media only screen and (max-width: 1000px){
     .sidenav .side-brand{
         display: block;
         margin: 20px;
         font-size: 30px;
         color: var(--theme-color);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .nav-trans .nav-wrapper .brand-logo strong{
+        display: none;
+        text-align: center;
+    }
+
+    .nav-trans .nav-wrapper .brand-logo i{
+        margin-left: 10px;
+        font-size: 40px;
+    }
+
+    .nav .no-wrapper .brand-logo i{
+        margin-right: 100px;
+    }
+
+    .nav .no-wrapper .brand-logo strong{
+        display: none;
+        text-align: center;
+    }
+
+    .nav .no-wrapper .brand-logo i{
+        margin-left: 100px;
+        font-size: 40px;
     }
 }
 

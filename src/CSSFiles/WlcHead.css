@@ -10,6 +10,7 @@
 }
 
 .welcome .video video{
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -117,6 +118,7 @@
     .video{
         grid-template-columns: 1fr;
         justify-content: center;
+        margin: 50px 5px;
     }
 
     .video .video-des{
@@ -151,6 +153,14 @@
 @media only screen and (max-width: 500px){
     .facilities{
         margin-top: 1000px;
+    }
+
+    .facilities .competency{
+        margin: 80px 5px;
+    }
+    
+    .facilities .com-head h1{
+        margin: 0 30px;
     }
 }
 

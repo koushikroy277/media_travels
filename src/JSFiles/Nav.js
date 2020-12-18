@@ -1,22 +1,14 @@
 import React, { Component } from "react";
 import { HashLink as Link } from 'react-router-hash-link';
-import { FaArtstation } from 'react-icons/fa';
+import { FaArtstation, FaDraftingCompass, FaHome, FaPlaneArrival, FaQuestion, FaPhone, FaHandHoldingUsd } from 'react-icons/fa';
 import '../CSSFiles/Nav.css';
 
 export default class Nav extends Component {
-    componentDidMount(){
-        const M = window.M;
-        document.addEventListener('DOMContentLoaded', function() {
-        const elems = document.querySelectorAll('.sidenav');
-        const instances = M.Sidenav.init(elems, {});
-        });
-        window.addEventListener("scroll", this.chngBg)
-    }
-
     constructor(props){
         super(props);
         this.state = {
-            navbar: false
+            navbar: false,
+            sidebar: false
         }
     }
 
@@ -26,6 +18,21 @@ export default class Nav extends Component {
         }else{
             this.setState({ navbar: false })
         }
+    }
+
+    sideBarOpen = () => {
+        this.setState({ sidebar: true })
+    }
+
+    componentDidMount(){
+        if (!this.state.sidebar){
+            const M = window.M;
+            document.addEventListener('DOMContentLoaded', function() {
+            const elems = document.querySelectorAll('.sidenav');
+            const instances = M.Sidenav.init(elems, {});
+            });
+            }
+        window.addEventListener("scroll", this.chngBg)
     }
 
 
@@ -64,28 +71,38 @@ export default class Nav extends Component {
             </div>
         </nav>
         </div>
-        <ul className="sidenav" id="mobile-demo">
-            <li className="side-brand"><i><FaArtstation /></i> <strong>Media Travels</strong></li>
+        <ul className={this.state.sidebar ? "sidenav sidenav-in" : "sidenav sidenav-out" } id="mobile-demo" >
+            <li onClick={this.sideBarOpen}  className="side-brand"><i><FaArtstation /></i> <strong>Media Travels</strong></li>
+            
             <li>
-            <Link className="link" activeClassName="activeLink" smooth to="#banner">Home</Link>
+                <Link className="link" activeClassName="activeLink" smooth to="#banner"><i><FaHome /></i>Home</Link>
             </li>
+
             <li>
-            <Link className="link"activeClassName="activeLink" smooth to="#about">About</Link>
+                <Link className="link"
+                activeClassName="activeLink" smooth to="#about"><i><FaQuestion /></i>About</Link>
             </li>
+
             <li>
-            <Link className="link"activeClassName="activeLink" smooth to="#facilities">Facilties</Link>
+                <Link className="link"
+                activeClassName="activeLink" smooth to="#facilities"><i><FaHandHoldingUsd/></i>Facilties</Link>
             </li>
+
             <li>
-            <Link className="link"activeClassName="activeLink" smooth to="#tour">Tour</Link>
+                <Link className="link"
+                activeClassName="activeLink" smooth to="#tour"><i><FaPlaneArrival/></i>Tour</Link>
             </li>
+
             <li>
-            <Link className="link"activeClassName="activeLink" smooth to="#services">Services</Link>
+                <Link className="link"
+                activeClassName="activeLink" smooth to="#services"><i><FaDraftingCompass/></i>Services</Link>
             </li>
+            
             <li>
-            <Link className="link"activeClassName="activeLink" smooth to="#contact">Contact</Link>
+                <Link className="link"
+                activeClassName="activeLink" smooth to="#contact"><i><FaPhone/></i>Contact</Link>
             </li>
         </ul>
-
         </>
     );
     }

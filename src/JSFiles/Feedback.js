@@ -21,14 +21,14 @@ export default class Feedback extends Component {
 
         return (
         <>
-        <div className="review">
+        <div className="title-header">
             <h1>Our top Reviews</h1>
         </div>
         <section className="feedback">
         <section className="feedback-sect">
             <Slider {...settings} className="slider">
             <div className="slider-item">
-                <img src={person} alt="Person"/>
+                <img src={person} alt="Person" align="center"/>
                 <h3>Fast & Reliable Site</h3>
                 <h3>Rating</h3>
                     <i>

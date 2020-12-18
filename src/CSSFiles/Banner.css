@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .banner{
     background-image: url("../assets/airplane-bg.jpg");
     background-position: center;
@@ -62,10 +56,10 @@
 
 @media only screen and (max-width: 600px){
     .banner-container .banner .banner-sect h1{
-    font-size: 4rem;   
+        font-size: 3rem;   
     }
     .banner-container .banner .banner-sect p{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 

@@ -1,5 +1,5 @@
 .contact-sect{
-    margin: 0 10%;
+    margin: 0 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 40px;
@@ -63,8 +63,8 @@
 }
 
 .contact-sect .contact-info form #message{
-    margin-top: 30px;
-    padding: 100px;
+    margin: 30px 5px 0 0;
+    padding: 70px;
     border-radius: 15px;
     font-size: 25px;
     outline: none;
@@ -73,6 +73,19 @@
 
 @media only screen and (max-width: 500px){
     .contact-sect{
-        margin: 0 10px;
+        margin: 0 5px;
+    }
+
+    .contact-sect .contact-info{
+        margin-left: 10px;
+        margin-right: 10%;
+    }
+
+    .contact-sect .address-info .address h1{
+        margin-right: 70px;
+    }
+
+    .contact-sect .address-info .address i{
+        margin-left: 10px;
     }
 }

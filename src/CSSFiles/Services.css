@@ -32,3 +32,9 @@
     color: var(--theme-color);
     font-weight: 600;
 }
+
+@media only screen and (max-width: 500px){
+    .services{
+        margin: 80px 10px;
+    }
+}

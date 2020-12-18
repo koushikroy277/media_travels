@@ -12,30 +12,32 @@ import Footer from './Footer';
 export default function Home() {
     return (
         <>
-        <section className="mainNav">
-            <Nav />
-        </section>
-        <section className="mainBanner">
-            <Banner />
-        </section>
-        <section className="mainWelcome">
-            <WlcHead />
-        </section>
-        <section className="mainPackage">
-            <Package />
-        </section>
-        <section className="mainService">
-            <Services />
-        </section>
-        <section className="mainFeedback">
-            <Feedback />
-        </section>
-        <section className="mainContact">
-            <Contact />
-        </section>
-        <section className="mainFooter">
-            <Footer />
-        </section>
+        <div className="mainHome">
+            <section className="mainNav">
+                <Nav />
+            </section>
+            <section className="mainBanner">
+                <Banner />
+            </section>
+            <section className="mainWelcome">
+                <WlcHead />
+            </section>
+            <section className="mainPackage">
+                <Package />
+            </section>
+            <section className="mainService">
+                <Services />
+            </section>
+            <section className="mainFeedback">
+                <Feedback />
+            </section>
+            <section className="mainContact">
+                <Contact />
+            </section>
+            <section className="mainFooter">
+                <Footer />
+            </section>
+        </div>
         </>
     )
 }

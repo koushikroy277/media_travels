@@ -26,5 +26,25 @@
 .footer .footer-part p{
     font-size: 18px;
     margin-top: 5px;
+    transition: all .2s ease;
+}
+
+.footer .footer-part p:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    .footer{
+        padding: 70px 20px;
+    }
+
+    .footer .footer-part h1{
+        text-align: left;
+    }
+
+    .footer .footer-part:last-child{
+        margin-left: 0;
+    }
 }
 

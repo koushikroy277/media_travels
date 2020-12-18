@@ -20,7 +20,7 @@ export default function Contact() {
                         <label for="mobile">Mobile</label>
                         <input type="tel" id="mobile"/>
                         <label for="message" >Ask your query here</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write us a message"></textarea>
+                        <textarea name="message" id="message" width="100%" placeholder="Write us a message"></textarea>
                     </form>
                 </div>
                 <div className="address-info">

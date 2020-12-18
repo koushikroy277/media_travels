@@ -4,9 +4,9 @@ import { FaShoppingCart, FaDollarSign } from 'react-icons/fa'
 import Pkg from '../assets/pkg.jpg';
 import Pkg2 from '../assets/pkg2.jpg';
 import Pkg3 from '../assets/pkg3.jpg';
-import Pkg4 from '../assets/pkg4.jpg';
-import Pkg5 from '../assets/page2pic10.jpg';
-import Pkg6 from '../assets/travel.jpg';
+import Pkg4 from '../assets/vac1.jpg';
+import Pkg5 from '../assets/vac2.jpg';
+import Pkg6 from '../assets/vac3.jpg';
 
 export default function Package() {
     return (

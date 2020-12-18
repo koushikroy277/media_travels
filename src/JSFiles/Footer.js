@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
                 <div className="footer-part">
                     <h1>Contact us</h1>
-                    <Social />
+                    <Social className="social-media"/>
                 </div>
             </section>
         </section>
